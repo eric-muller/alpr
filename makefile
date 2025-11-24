@@ -2,14 +2,14 @@ build:
 	(cd data; ../scripts/all.sh > ../build.log 2>&1)
 
 archive-data:
-	rm -fr efele.net/data
-	mkdir efele.net/data
+	rm -fr efele.net/data/*.tar.bz2
+	mkdir -p efele.net/data
 	for f in data/*; do \
 		git status -s --ignored $$f |\
 		sed -e 's/!! //' |\
 		sed -e 's/?? //' |\
 		sed -e 's/"//g' |\
-		tar czf efele.net/$$f.tar.gz -T -; \
+		tar cjf efele.net/$$f.tar.bz2 -T -; \
 	done
 
 
@@ -19,4 +19,4 @@ tidy:
 	rm -fr temp
 
 clean: tidy
-	rm -fr efele.net/data
+	rm -fr efele.net/data/*.tar.bz2

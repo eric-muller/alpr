@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>ALPR terminology</title>
+
+    <style>
+@import url(/style/style1.css);
+
+table { border-collapse: collapse; border-spacing: 0.5em; }
+
+th  { border-top: 1px solid; border-bottom: 1px solid;
+      font-weight: normal; }
+
+th, td { padding: 0 0.5em 0 0.5em; }
+
+h2 { border-top: 1px solid; text-align: left; }
+    </style>
+
+    <script src='/style/style1.js'> </script>
+  </head>
+
+<body>
+
+ <h1>ALPR terminology</h1>
+ <p class="date">November 23, 2025</p>
+
+<p id='toc'><span>Table of contents</span></p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='alpr'>ALPR</h2>
+
+<p>ALPR stands for <i>Automated License Plate Reader</i>. The name is a misnomer: those systems are first and foremost cameras triggered by cars passing by. The license plate is only one of the elements extracted from the images. Indeed, the City of Saratoga ALPR policy states (<a href='https://www.saratoga.ca.us/DocumentCenter/View/2805/City-of-Saratoga-ALPR-Policy?bidId='>section III</a>):</p>
+
+<blockquote>
+  <p>The ALPR system shall collect the date and time that the license plate passes a digital-image site where an ALPR is located together with a captured vehicle’s geographical location and vehicle details (make, model, type, and color).</p>
+</blockquote>
+
+<p>As Flock Safety writes, “No Plate? No Problem. Capture more detail with Vehicle Fingerprint® and Flock FreeForm™. Turn images into actionable evidence — no plate required.”</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='devices_and_networks'>Devices and Networks</h2>
+
+<p>Flock devices, which are presumably cameras, are grouped in networks. For example, the Los Altos Police Department controls the “Los Altos CA PD” network of 12 cameras. The Los Angeles County Sheriff Department controls two networks, “City of Paramount CA (LASD)” and “City of La Canada-Flintridge CA (LASD)”.</p>
+
+<p>In addition to cameras controlled by public agencies, there are Flock cameras controlled by private parties. Those parties can share their data with public agencies. The audit data may not reveal how many such cameras exist, how many are shared, etc.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='sharing'>Sharing</h2>
+
+<p>Agencies (police departments, county sheriffs, etc) own the data generate from the cameras they installed, and can share it with other agencies, via three mechanisms:</p>
+
+<ul>
+
+<li>via 1:1 Sharing: with selected agencies (by an explicit list, by distance or anywhere in the same state). Queries do not need a complete license plate.</li>
+
+<li>via Statewide Lookup: with all the agencies of the same state that also participate in Statewide Lookup. Queries must include a complete license plate.</li>
+
+<li>via National Lookup: with all the agencies in the USA that also participate in National Lookup. Queries must include a complete license plate.</li>
+
+</ul>
+
+<p>Queries enabled via Statewide and National Lookup sharing are sometime referred to as “network searches” (unrelated to “camera networks”).</p>
+
+<p>&#xa0;</p>
+
+<p>Added on 2025-11-23: The answer to <a href="https://www.muckrock.com/foi/denver-145/open-records-request-flock-logs-195492">this public request</a> is honest about having shared via National Lookup:</p>
+
+<blockquote>
+  <p>Just for your awareness, the Denver Police Department (DPD) maintains control over which agencies it authorizes access to search the Denver LPR network. Prior to April 2025, Denver’s LPR network was visible under certain circumstances when a search was conducted by any agency using the National Lookup tool in the Flock Safety system. The DPD disabled its inclusion in the National Lookup tool effective April 17, 2025, so Denver LPR images only appear in search results conducted by agencies with whom DPD has authorized access since that time. </p>
+</blockquote>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='auditing'>Auditing</h2>
+
+<p>Queries on the data accumulated by ALPRs are logged for auditing purposes. Through California Public Records Act requests, one can potentially obtain those records for an agency. A typical request can seek three elements:</p>
+
+<ul>
+  <li>the Sharing report describes the agencies that have 1:1 Sharing arrangements.</li>
+
+  <li>the Org audit lists all the queries made by that agency.</li>
+
+  <li>the Network audit lists all the queries made against that agency’s data (here “network” is unrelated to “camera network" or “network searches”)</li>
+</ul>
+
+<p>The audit data for the queries includes: the name of the person running the query, the agency they belong to, the time of the search, the purpose of the search via a case number and a reason, the license plate of interest, the time range of interest, the number of networks searched, the number of cameras searched. However, when an agency provide its audit data in response to a Public Record request, it can redact out any element.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='queries_and_cases'>Queries and cases</h2>
+
+<p>The logs contain individual queries. It is common to find multiple successive queries from the same agency, for the same reason and case number; presumably, those queries are related to a single “case”. However, because the reason and case number are often missing or vague, there are matching queries which are obviously from different cases (e.g. more than 30 days apart, and therefore the evidence for the first case has been purged). Therefore, there is no perfect way to group queries in cases. We use this rule: given a first query for a certain agency, reason, case number, where at least one of the reason and case number is not empty, those with the same triplet within 10 days of that first query are deemed to form a case; the next query with the same triplet starts a new case. When appropriate, I summarized both the queries and the cases.</p>
+
+<p>&#xa0;</p>
+
+<p>Added on 2025-11-23: The answer to <a href="https://www.muckrock.com/foi/denver-145/open-records-request-flock-logs-195492">this public request</a> sheds a bit of light on the issue:</p>
+
+<blockquote>
+  <p>The audits include both parent and child searches (i.e., initial searches and users changing output configurations – such as changing to a mapped view – resulting in Flock re-querying data) which will produce inflated totals.</p>
+</blockquote>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='missing'>Missing data</h2>
+
+<p>The audit logs of queries typically include the number of devices and networks involved in a query. It seems that there was a problem with Flock between December 17, 2024 and February 5, 2025: during that period, most queries report that 0 devices were involved; furthermore, that happens with the logs collected from multiple agencies.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='transparency_portal'>Transparency Portals</h2>
+
+<p>Flock provides Transparency Portals, such as the one for <a href='https://transparency.flocksafety.com/los-altos-ca-pd'>Los Altos</a>.</p>
+
+<p>The section <i>External organizations with access</i> lists only the agencies that have access under 1:1 Sharing, but not those which have access under National Lookup or under Statewide Lookup.</p>
+
+<p>The section <i>Searches in the last 30 days</i> counts only the searches by the agency itself, and does not count those made on the agency data by other agencies.</p>
+
+<hr class='eod'/>
+
+<div class='history'>
+  <p class='historyentry'>November 22, 2025: Added some details about National Lookup and the query/case situation.</p>
+
+  <p class='historyentry'>October 13, 2025: first version.</p>
+</div>
+
+</body>
+</html>

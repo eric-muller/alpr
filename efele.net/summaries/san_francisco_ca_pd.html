@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>San Francisco Police Department ALPR usage</title>
+
+    <style>
+@import url(/style/style1.css);
+
+table { border-collapse: collapse; border-spacing: 0.5em; }
+
+th  { border-top: 1px solid; border-bottom: 1px solid;
+      font-weight: normal; }
+
+th, td { padding: 0 0.5em 0 0.5em; }
+
+h2 { border-top: 1px solid; text-align: left; }
+
+    </style>
+
+    <script src="/style/style1.js"> </script>
+  </head>
+
+<body>
+
+ <h1>San Francisco Police Department ALPR usage</h1>
+ <p class="date">October 13, 2025</p>
+
+<p id="toc"><span>Table of contents</span></p>
+
+<p> </p>
+
+<p>This report is based on data obtained via California Public Record Act request P222366-090425, for data related to the ALPR system operated by the San Francisco Police Department (hereafter <span>SFPD</span>). It covers the period <span>August 16, 2024</span> through <span>June 2, 2025</span>.</p>
+
+<p>The <span>SFPD</span> decided to redact the case number and reason from the Organization and Network audits. Consequently, there is not enough data to reconstruct cases (even approximately), and each query is treated as a separate case.</p>
+
+<p> </p>
+
+<p>The <a href="https://transparency.flocksafety.com/san-francisco-ca-pd">Transparency portal</a>.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="sharing_audit">1:1 Sharing audit</h2>
+
+<p>Under 1:1 Sharing, each agency decides which other agencies can access its data. Agency A can share with agency B without B sharing with A.</p>
+
+<p><span>SFPD</span> and X allow reciprocal searches: <span>222</span> agencies.</p>
+
+<p><span>SFPD</span> allows searches, but X does not: <span>57</span> agencies.</p>
+
+<p><span>SFPD</span> does not allow searches but X does: <span>37</span> agencies.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="sharing_outside_ca">Sharing outside California</h2>
+
+<p>Prior to <span>February 12, 2025</span>, there are numerous queries from agencies outside California.</p>
+
+<p><span>3,836</span> agencies outside California accessed the <span>SFPD</span> data, with <span>1,604,746</span> cases / <span>1,604,746</span> queries. The 25 most active agencies:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Houston TX PD</td>
+    <td style="text-align: right">64,786</td>
+    <td style="text-align: right">64,786</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Dallas TX PD</td>
+    <td style="text-align: right">50,580</td>
+    <td style="text-align: right">50,580</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Mishawaka PD IN</td>
+    <td style="text-align: right">20,806</td>
+    <td style="text-align: right">20,806</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Fairfax County VA PD</td>
+    <td style="text-align: right">16,681</td>
+    <td style="text-align: right">16,681</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Oklahoma City OK PD</td>
+    <td style="text-align: right">15,316</td>
+    <td style="text-align: right">15,316</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Fort Worth TX PD</td>
+    <td style="text-align: right">15,116</td>
+    <td style="text-align: right">15,116</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Cobb County GA SO</td>
+    <td style="text-align: right">13,804</td>
+    <td style="text-align: right">13,804</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Volusia County FL SO</td>
+    <td style="text-align: right">12,088</td>
+    <td style="text-align: right">12,088</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Columbus OH PD</td>
+    <td style="text-align: right">11,288</td>
+    <td style="text-align: right">11,288</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Village of Lynwood IL PD</td>
+    <td style="text-align: right">11,136</td>
+    <td style="text-align: right">11,136</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Farmington Hills MI PD</td>
+    <td style="text-align: right">10,665</td>
+    <td style="text-align: right">10,665</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Cobb County GA PD</td>
+    <td style="text-align: right">10,336</td>
+    <td style="text-align: right">10,336</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Kansas Highway Patrol</td>
+    <td style="text-align: right">10,184</td>
+    <td style="text-align: right">10,184</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Missouri State Highway Patrol</td>
+    <td style="text-align: right">10,093</td>
+    <td style="text-align: right">10,093</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Jefferson Parish LA SO</td>
+    <td style="text-align: right">10,050</td>
+    <td style="text-align: right">10,050</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Indianapolis Metro PD IN</td>
+    <td style="text-align: right">9,781</td>
+    <td style="text-align: right">9,781</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Coweta County GA SO</td>
+    <td style="text-align: right">9,050</td>
+    <td style="text-align: right">9,050</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Jacksonville FL SO</td>
+    <td style="text-align: right">8,889</td>
+    <td style="text-align: right">8,889</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">DeKalb County GA PD</td>
+    <td style="text-align: right">8,699</td>
+    <td style="text-align: right">8,699</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Lafayette Parish LA SO</td>
+    <td style="text-align: right">8,603</td>
+    <td style="text-align: right">8,603</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Arizona Department of Public Safety</td>
+    <td style="text-align: right">8,045</td>
+    <td style="text-align: right">8,045</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Cabot AR PD</td>
+    <td style="text-align: right">7,886</td>
+    <td style="text-align: right">7,886</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Alexandria VA PD</td>
+    <td style="text-align: right">7,435</td>
+    <td style="text-align: right">7,435</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Texas Department of Public Safety</td>
+    <td style="text-align: right">7,358</td>
+    <td style="text-align: right">7,358</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Bay County FL SO</td>
+    <td style="text-align: right">7,146</td>
+    <td style="text-align: right">7,146</td>
+  </tr>
+</table>
+
+<p>Some are federal agencies, but with few queries:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Lake Mead NV NRA [Federal]</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">5</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Langley VA Air Force Base [Federal]</td>
+    <td style="text-align: right">67</td>
+    <td style="text-align: right">67</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Loma Linda Healthcare System CA Veterans Affairs PD [Federal]</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">2</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Naval Criminal Investigative Service [Federal] [Inactive]</td>
+    <td style="text-align: right">27</td>
+    <td style="text-align: right">27</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">US - GSA Office of Inspector General [Federal]</td>
+    <td style="text-align: right">31</td>
+    <td style="text-align: right">31</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Wright Patterson OH Air Force Base [Federal]</td>
+    <td style="text-align: right">21</td>
+    <td style="text-align: right">21</td>
+  </tr>
+</table>
+
+<p>Given the number of non CA agencies, it seems likely that their queries were enabled by National Lookup, rather than by 1:1 Sharing (which would have required to select all those agencies one by one, or selecting agencies by a very large radius).</p>
+
+<p>These queries are clear violations of California SB 40, as California state and local law enforcement agencies have been <a href="https://oag.ca.gov/news/press-releases/attorney-general-bonta-advises-california-law-enforcement-legal-uses-and">reminded by the California Attorney General</a> in 2023.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="statewide_lookup">Sharing via Statewide lookup</h2>
+
+<p><span>SFPD</span> participates in Statewide lookup. This allows California agencies to search the <span>SFPD</span> data without any prior agreement on sharing, but limits the searches to full license plates.</p>
+
+<p><span>54</span> agencies without 1:1 Sharing have accessed the <span>SFPD</span> data since <span>February 12, 2025</span>.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_nb_queries">Organization audit: number of queries</h2>
+
+<p>Most of the <span>392,040</span> queries made by <span>SFPD</span> involve, among others, cameras controlled by the <span>SFPD</span>. <span>5,738</span> queries involve only non-<span>SFPD</span> cameras.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">13,654</td>
+    <td style="text-align: right">13,654</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">20,765</td>
+    <td style="text-align: right">20,765</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">23,135</td>
+    <td style="text-align: right">23,135</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">26,547</td>
+    <td style="text-align: right">26,547</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">35,193</td>
+    <td style="text-align: right">35,193</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">57,253</td>
+    <td style="text-align: right">57,253</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">53,871</td>
+    <td style="text-align: right">53,871</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">51,041</td>
+    <td style="text-align: right">51,041</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">52,554</td>
+    <td style="text-align: right">52,554</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">55,914</td>
+    <td style="text-align: right">55,914</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">2,113</td>
+    <td style="text-align: right">2,113</td>
+  </tr>
+</table>
+
+<p>That amounts to one query every minute.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_nb_cameras">Organization audit: number of agencies and cameras</h2>
+
+<p>The first column is the number of agencies that queried the data, which by construction must be 1 in an organization audit.</p>
+
+<p>The second column is the maximum number of cameras involved in a query. While most agencies operate a relatively small number of cameras, they can search data captured by other agencies. </p>
+
+<p>The next column, “% 0-100” is the percentage of queries that involved less than 100 cameras. Similarly, the following columns are the percentages for 100 to 1k cameras, 1k to 10k cameras and more than 10k cameras respectively.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">agencies</th>
+    <th style="text-align: center">max cameras</th>
+    <th style="text-align: center">% 0-100</th>
+    <th style="text-align: center">% 100-1k</th>
+    <th style="text-align: center">% 1k-10k</th>
+    <th style="text-align: center">% 10k+</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">8,511</td>
+    <td style="text-align: right">37</td>
+    <td style="text-align: right">58</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">8,882</td>
+    <td style="text-align: right">36</td>
+    <td style="text-align: right">60</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">10,378</td>
+    <td style="text-align: right">34</td>
+    <td style="text-align: right">61</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">10,664</td>
+    <td style="text-align: right">32</td>
+    <td style="text-align: right">63</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">1</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">81,726</td>
+    <td style="text-align: right">48</td>
+    <td style="text-align: right">26</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">24</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">11,140</td>
+    <td style="text-align: right">95</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">1</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">85,684</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: right">24</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">61</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">15,587</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: right">27</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">64</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">16,271</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: right">29</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">63</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">16,905</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: right">30</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">66</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">16,910</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">49</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">45</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_personnel">Organization audit: personnel</h2>
+
+<p>The Organization audit list <span>730</span> distinct user names.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="net_audit_nb_queries">Network audit: number of queries</h2>
+
+<p>In addition to the situation over the whole audited period, we also look at the period since <span>February 12, 2025</span>, when sharing outside California stopped:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>since</th>
+      <th>cases</th>
+      <th>queries</th>
+      <th>agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span>August 16, 2024</span></td>
+      <td style="text-align: right"><span>4,946,575</span></td>
+      <td style="text-align: right"><span>4,946,575</span></td>
+      <td style="text-align: right"><span>4,153</span></td>
+    </tr>
+    <tr>
+      <td><span>February 12, 2025</span></td>
+      <td style="text-align: right"><span>1,553,455</span></td>
+      <td style="text-align: right"><span>1,553,455</span></td>
+      <td style="text-align: right"><span>307</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Over the recent period, that amounts to one query every 6 seconds.</p>
+
+<p>The number of cases has been steadily increasing each month, with a reset when sharing outside of California was stopped:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">269,200</td>
+    <td style="text-align: right">269,200</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">463,959</td>
+    <td style="text-align: right">463,959</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">537,173</td>
+    <td style="text-align: right">537,173</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">534,537</td>
+    <td style="text-align: right">534,537</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">608,779</td>
+    <td style="text-align: right">608,779</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">727,480</td>
+    <td style="text-align: right">727,480</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">537,822</td>
+    <td style="text-align: right">537,822</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">398,955</td>
+    <td style="text-align: right">398,955</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">412,076</td>
+    <td style="text-align: right">412,076</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">436,355</td>
+    <td style="text-align: right">436,355</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">20,239</td>
+    <td style="text-align: right">20,239</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="net_audit_nb_cameras">Network audit: number of agencies and cameras</h2>
+
+<p>See <a href="#org_audit_nb_cameras">this previous section</a> for the meaning of the columns.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">agencies</th>
+    <th style="text-align: center">max cameras</th>
+    <th style="text-align: center">% 0-100</th>
+    <th style="text-align: center">% 100-1k</th>
+    <th style="text-align: center">% 1k-10k</th>
+    <th style="text-align: center">% 10k+</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">2,625</td>
+    <td style="text-align: right">23,569</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">37</td>
+    <td style="text-align: right">56</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">3,013</td>
+    <td style="text-align: right">25,562</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">40</td>
+    <td style="text-align: right">54</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">3,082</td>
+    <td style="text-align: right">26,111</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">42</td>
+    <td style="text-align: right">53</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">3,167</td>
+    <td style="text-align: right">27,294</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: right">43</td>
+    <td style="text-align: right">51</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">3,245</td>
+    <td style="text-align: right">82,166</td>
+    <td style="text-align: right">44</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: right">33</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">3,343</td>
+    <td style="text-align: right">42,467</td>
+    <td style="text-align: right">98</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">2,826</td>
+    <td style="text-align: right">90,201</td>
+    <td style="text-align: right">17</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">10</td>
+    <td style="text-align: right">68</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">288</td>
+    <td style="text-align: right">92,502</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: right">82</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">291</td>
+    <td style="text-align: right">54,006</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: right">81</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">284</td>
+    <td style="text-align: right">56,643</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: right">83</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">208</td>
+    <td style="text-align: right">56,861</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: right">80</td>
+  </tr>
+</table>
+
+<p>As we have seen in the previous section, the queries by other agencies dominate. From the point of view of those agencies, <span>SFPD</span> is just one of many agencies, more or less geographically distant. When <span>SFPD</span>’s data is searched, there are probably many other agencies searched as well, and therefore many cameras involved, hence the high proportion of broad searches.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="california_lookup">Top agencies accessing <span>SFPD</span> data</h2>
+
+<p>The 25 agencies with the largest number of cases involving <span>SFPD</span> data since <span>February 12, 2025</span>:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: right">193,715</td>
+    <td style="text-align: right">193,715</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: right">100,245</td>
+    <td style="text-align: right">100,245</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: right">80,003</td>
+    <td style="text-align: right">80,003</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: right">74,271</td>
+    <td style="text-align: right">74,271</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: right">52,900</td>
+    <td style="text-align: right">52,900</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: right">44,880</td>
+    <td style="text-align: right">44,880</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Diego CA PD</td>
+    <td style="text-align: right">34,643</td>
+    <td style="text-align: right">34,643</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Los Angeles County CA SD</td>
+    <td style="text-align: right">31,259</td>
+    <td style="text-align: right">31,259</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Alameda County CA SO</td>
+    <td style="text-align: right">27,937</td>
+    <td style="text-align: right">27,937</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Diego County CA SD</td>
+    <td style="text-align: right">27,784</td>
+    <td style="text-align: right">27,784</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">City of Riverside CA PD</td>
+    <td style="text-align: right">26,652</td>
+    <td style="text-align: right">26,652</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Fremont CA PD</td>
+    <td style="text-align: right">25,143</td>
+    <td style="text-align: right">25,143</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Daly City CA PD</td>
+    <td style="text-align: right">25,131</td>
+    <td style="text-align: right">25,131</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: right">25,078</td>
+    <td style="text-align: right">25,078</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Leandro CA PD</td>
+    <td style="text-align: right">23,085</td>
+    <td style="text-align: right">23,085</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Oakland CA PD</td>
+    <td style="text-align: right">22,704</td>
+    <td style="text-align: right">22,704</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: right">22,381</td>
+    <td style="text-align: right">22,381</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Sacramento County CA SO</td>
+    <td style="text-align: right">18,991</td>
+    <td style="text-align: right">18,991</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Ontario CA PD</td>
+    <td style="text-align: right">18,965</td>
+    <td style="text-align: right">18,965</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Corona CA PD</td>
+    <td style="text-align: right">18,770</td>
+    <td style="text-align: right">18,770</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Mateo CA PD</td>
+    <td style="text-align: right">15,549</td>
+    <td style="text-align: right">15,549</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Santa Rosa CA PD</td>
+    <td style="text-align: right">15,537</td>
+    <td style="text-align: right">15,537</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Joaquin County CA SO</td>
+    <td style="text-align: right">14,716</td>
+    <td style="text-align: right">14,716</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Sunnyvale CA PD</td>
+    <td style="text-align: right">14,487</td>
+    <td style="text-align: right">14,487</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Ventura County CA SO</td>
+    <td style="text-align: right">13,931</td>
+    <td style="text-align: right">13,931</td>
+  </tr>
+</table>
+
+<hr class="eod"/>
+
+</body>
+</html>

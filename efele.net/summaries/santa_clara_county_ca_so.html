@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Santa Clara County Office of the Sheriff ALPR audit</title>
+
+    <style>
+@import url(/style/style1.css);
+
+table { border-collapse: collapse; border-spacing: 0.5em; }
+
+#t1 td {  border-top: 1px solid; }
+
+th  { border-top: 1px solid; border-bottom: 1px solid;
+      font-weight: normal; }
+
+th, td { padding: 0 0.5em 0 0.5em; }
+
+h2 { border-top: 1px solid; text-align: left; }
+
+    </style>
+
+    <script src="/style/style1.js"> </script>
+  </head>
+
+<body>
+
+ <h1>Santa Clara County Office of the Sheriff ALPR usage</h1>
+ <p class="date">October 13, 2025</p>
+
+<p id="toc"><span>Table of contents</span></p>
+
+<p> </p>
+
+<p>This report is based on a California Public Record Act request for data related to the ALPR system operated by the Santa Clara County Office of the Sheriff (hereafter <span>SCCOS</span>), and covers the period Mars 1, 2024 through September 15, 2025.</p>
+
+<p>The <span>SCCOS</span> decided to redact the case number and reason from the Organization and Network audits. Consequently, there is not enough data to reconstruct (even approximately) cases and each query is treated as a separate case.</p>
+
+<p>The <span>SCCOS</span> provides public safety services for Los Altos Hills, Saratoga, Cupertino and unincorporated areas of the county.</p>
+
+<p> </p>
+
+<p>The <a href="https://transparency.flocksafety.com/santa-clara-county-ca-so">Transparency portal</a>.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="sharing_audit">1:1 Sharing audit</h2>
+
+<p>Under 1:1 Sharing, each agency decides which other agencies can access its data. Agency A can share with agency B without B sharing with A.</p>
+
+<p><span>SCCOS</span> shares its “City of Los Altos Hills CA” network with the “Los Altos Hills - Town” agency. This is the only 1:1 sharing of the <span>SCCOS</span> data.</p>
+
+<p><span>62</span> agencies share their data with <span>SCCOS</span>, including <span>6</span> agencies outside of California:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">agency</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Medford OR PD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Nephi PD UT</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Oxford MS PD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Pittsboro IN PD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Sarasota FL PD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Sumner County TN SO</td>
+  </tr>
+</table>
+
+<p>In Saratoga, neighborhoods organized as Landscape and Lighting districts can request and pay for the installation of Flock cameras. It seems that in the Flock system, those neighborhoods are treated as agencies, which then share their data with <span>SCCOS</span>. In any case, here is the list of “agencies” that do not have “PD” or “SO” in their name and share their data with <span>SCCOS</span>.</p>
+
+<table id="t1">
+  <tr>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">networks shared</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">20424 Miljevich Dr (CA)</td>
+    <td style="text-align: left">20424 Miljevich Dr (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Brookside</td>
+    <td style="text-align: left">Brookside - San Jose, CA</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Farwell Ave Cameras</td>
+    <td style="text-align: left">Farwell Ave, Saratoga (CA),Farwell Avenue @ Fruitvale Ave WB (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Gypsy Hill &amp; Crisp Neighborhood (CA)</td>
+    <td style="text-align: left">Gypsy Hill &amp; Crisp Neighborhood (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Hayfield Estates (CA)</td>
+    <td style="text-align: left">Hayfield Estates (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Holiday Lake Estates (CA)</td>
+    <td style="text-align: left">Holiday Lake Estates (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Horseshoe Neighborhood (CA)</td>
+    <td style="text-align: left">Horseshoe Neighborhood (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Montauk Park Civic Improvement Association (CA)</td>
+    <td style="text-align: left">Montauk Park Civic Improvement Association (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Parker Ranch (CA)</td>
+    <td style="text-align: left">Parker Ranch (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Prometheus Real Estate Group (CA)</td>
+    <td style="text-align: left">The Dean - Prometheus (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Saratoga Retirement Community (CA)</td>
+    <td style="text-align: left">Saratoga Retirement Community (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Saratoga Woods</td>
+    <td style="text-align: left">Saratoga Woods</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Sobey Road (CA)</td>
+    <td style="text-align: left">Sobey Road (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Vessing Neighborhood</td>
+    <td style="text-align: left">Vessing Road - Saratoga (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Vista De Almaden Neighborhood (CA)</td>
+    <td style="text-align: left">Vista De Almaden Neighborhood HOA San Jose (CA)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">West Valley Mission College Dist Campus (CA)</td>
+    <td style="text-align: left">West Valley Mission College Dist Campus (CA)</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="sharing_in_california">Sharing in California</h2>
+
+<p>Since <span>October 22, 2024</span>, <span>SCCOS</span> does not share its data with any other agency, in California or not (except for the Los Altos Hills cameras with the Town of Los Altos Hills). Prior to that date, <span>155</span> agencies accessed  data (either by 1:1 sharing or Statewide lookup). The 25 agencies with the largest number of cases:</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: right">115,138</td>
+    <td style="text-align: right">115,138</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: right">57,504</td>
+    <td style="text-align: right">57,504</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: right">47,911</td>
+    <td style="text-align: right">47,911</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: right">43,093</td>
+    <td style="text-align: right">43,093</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: right">40,426</td>
+    <td style="text-align: right">40,426</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: right">27,049</td>
+    <td style="text-align: right">27,049</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: right">25,003</td>
+    <td style="text-align: right">25,003</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Los Angeles County CA SD</td>
+    <td style="text-align: right">24,594</td>
+    <td style="text-align: right">24,594</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Ontario CA PD</td>
+    <td style="text-align: right">21,326</td>
+    <td style="text-align: right">21,326</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Fremont CA PD</td>
+    <td style="text-align: right">21,006</td>
+    <td style="text-align: right">21,006</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Alameda County CA SO</td>
+    <td style="text-align: right">17,153</td>
+    <td style="text-align: right">17,153</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Daly City CA PD</td>
+    <td style="text-align: right">14,056</td>
+    <td style="text-align: right">14,056</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: right">13,793</td>
+    <td style="text-align: right">13,793</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Santa Clara CA PD</td>
+    <td style="text-align: right">12,449</td>
+    <td style="text-align: right">12,449</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Contra Costa County CA SO</td>
+    <td style="text-align: right">10,831</td>
+    <td style="text-align: right">10,831</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Napa County CA SO</td>
+    <td style="text-align: right">10,743</td>
+    <td style="text-align: right">10,743</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Vacaville CA PD</td>
+    <td style="text-align: right">10,410</td>
+    <td style="text-align: right">10,410</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Santa Clara County CA SO</td>
+    <td style="text-align: right">10,128</td>
+    <td style="text-align: right">10,128</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Diego CA PD</td>
+    <td style="text-align: right">9,445</td>
+    <td style="text-align: right">9,445</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: right">8,875</td>
+    <td style="text-align: right">8,875</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Santa Rosa CA PD</td>
+    <td style="text-align: right">8,830</td>
+    <td style="text-align: right">8,830</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Leandro CA PD</td>
+    <td style="text-align: right">8,777</td>
+    <td style="text-align: right">8,777</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">San Bruno CA PD</td>
+    <td style="text-align: right">8,024</td>
+    <td style="text-align: right">8,024</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">CA - Chino PD</td>
+    <td style="text-align: right">7,817</td>
+    <td style="text-align: right">7,817</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">Fairfield CA PD</td>
+    <td style="text-align: right">7,653</td>
+    <td style="text-align: right">7,653</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_nb_queries">Organization audit: number of queries</h2>
+
+<p>Most of the <span>11,231</span> queries made by <span>SCCOS</span> involve, among others, cameras controlled by the <span>SCCOS</span>. <span>1,104</span> queries involve only non-<span>SCCOS</span> cameras.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-03</td>
+    <td style="text-align: right">288</td>
+    <td style="text-align: right">288</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-04</td>
+    <td style="text-align: right">501</td>
+    <td style="text-align: right">501</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-05</td>
+    <td style="text-align: right">342</td>
+    <td style="text-align: right">342</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-06</td>
+    <td style="text-align: right">241</td>
+    <td style="text-align: right">241</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-07</td>
+    <td style="text-align: right">207</td>
+    <td style="text-align: right">207</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">626</td>
+    <td style="text-align: right">626</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">394</td>
+    <td style="text-align: right">394</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">367</td>
+    <td style="text-align: right">367</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">273</td>
+    <td style="text-align: right">273</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">581</td>
+    <td style="text-align: right">581</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">368</td>
+    <td style="text-align: right">368</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">579</td>
+    <td style="text-align: right">579</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">700</td>
+    <td style="text-align: right">700</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">374</td>
+    <td style="text-align: right">374</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">848</td>
+    <td style="text-align: right">848</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">1,558</td>
+    <td style="text-align: right">1,558</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07</td>
+    <td style="text-align: right">1,509</td>
+    <td style="text-align: right">1,509</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08</td>
+    <td style="text-align: right">1,167</td>
+    <td style="text-align: right">1,167</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09</td>
+    <td style="text-align: right">308</td>
+    <td style="text-align: right">308</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_nb_cameras">Organization audit: number of agencies and cameras</h2>
+
+<p>The first column is the number of agencies that queried the data, which by construction must be 1 in an organization audit.</p>
+
+<p>The second column is the maximum number of cameras involved in a query. While most agencies operate a relatively small number of cameras, they can search data captured by other agencies. </p>
+
+<p>The next column, “% 0-100” is the percentage of queries that involved less than 100 cameras. Similarly, the following columns are the percentages for 100 to 1k cameras, 1k to 10k cameras and more than 10k cameras respectively.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">agencies</th>
+    <th style="text-align: center">max cameras</th>
+    <th style="text-align: center">% 0-100</th>
+    <th style="text-align: center">% 100-1k</th>
+    <th style="text-align: center">% 1k-10k</th>
+    <th style="text-align: center">% 10k+</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-03</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">83</td>
+    <td style="text-align: right">100</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-04</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">144</td>
+    <td style="text-align: right">76</td>
+    <td style="text-align: right">23</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-05</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">196</td>
+    <td style="text-align: right">22</td>
+    <td style="text-align: right">77</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-06</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">198</td>
+    <td style="text-align: right">75</td>
+    <td style="text-align: right">25</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right"> </td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,900</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: right">18</td>
+    <td style="text-align: right">69</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">2,699</td>
+    <td style="text-align: right">25</td>
+    <td style="text-align: right">32</td>
+    <td style="text-align: right">42</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">2,740</td>
+    <td style="text-align: right">31</td>
+    <td style="text-align: right">37</td>
+    <td style="text-align: right">30</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,945</td>
+    <td style="text-align: right">30</td>
+    <td style="text-align: right">43</td>
+    <td style="text-align: right">26</td>
+    <td style="text-align: right">0</td>
+  </tr>
+</table>
+
+<p><span>SCCOS</span> redacted  out the number of cameras for the period June 1 2024 to June 23 2025.</p>
+
+<p>We can see the number of cameras growing, presumably as more agencies share their data with <span>SCCOS</span>.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="org_audit_personnel">Organization audit: personnel</h2>
+
+<p>The <span>SCCOS</span> elected to redact the user names from some of the Organization queries, leaving 107 distinct user names.</p>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="net_audit_nb_queries">Network audit: number of queries</h2>
+
+<p>In addition to the situation over the whole audited period, we also look at the last period, when sharing stopped:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>since</th>
+      <th>cases</th>
+      <th>queries</th>
+      <th>agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>March 1, 2024</td>
+      <td style="text-align: right"><span>867,991</span></td>
+      <td style="text-align: right"><span>867,991</span></td>
+      <td style="text-align: right"><span>156</span></td>
+    </tr>
+    <tr>
+      <td><span>October 22, 2024</span></td>
+      <td style="text-align: right"><span>7,542</span></td>
+      <td style="text-align: right"><span>7,542</span></td>
+      <td style="text-align: right"><span>1</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Over the recent period, that amounts to one query every hour.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">cases</th>
+    <th style="text-align: center">queries</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-03</td>
+    <td style="text-align: right">4,813</td>
+    <td style="text-align: right">4,813</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-04</td>
+    <td style="text-align: right">620</td>
+    <td style="text-align: right">620</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-05</td>
+    <td style="text-align: right">17,623</td>
+    <td style="text-align: right">17,623</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-06</td>
+    <td style="text-align: right">92,074</td>
+    <td style="text-align: right">92,074</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-07</td>
+    <td style="text-align: right">139,021</td>
+    <td style="text-align: right">139,021</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">208,792</td>
+    <td style="text-align: right">208,792</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">227,233</td>
+    <td style="text-align: right">227,233</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">170,334</td>
+    <td style="text-align: right">170,334</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">267</td>
+    <td style="text-align: right">267</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">575</td>
+    <td style="text-align: right">575</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">179</td>
+    <td style="text-align: right">179</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">498</td>
+    <td style="text-align: right">498</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">545</td>
+    <td style="text-align: right">545</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">306</td>
+    <td style="text-align: right">306</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">843</td>
+    <td style="text-align: right">843</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">1,486</td>
+    <td style="text-align: right">1,486</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07</td>
+    <td style="text-align: right">1,436</td>
+    <td style="text-align: right">1,436</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08</td>
+    <td style="text-align: right">1,105</td>
+    <td style="text-align: right">1,105</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09</td>
+    <td style="text-align: right">241</td>
+    <td style="text-align: right">241</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="net_audit_nb_cameras">Network audit: number of agencies and cameras</h2>
+
+<p>See <a href="#org_audit_nb_cameras">this previous section</a> for the meaning of the columns.</p>
+
+<table>
+  <tr>
+    <th style="text-align: center">month</th>
+    <th style="text-align: center">agencies</th>
+    <th style="text-align: center">max cameras</th>
+    <th style="text-align: center">% 0-100</th>
+    <th style="text-align: center">% 100-1k</th>
+    <th style="text-align: center">% 1k-10k</th>
+    <th style="text-align: center">% 10k+</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-03</td>
+    <td style="text-align: right">9</td>
+    <td style="text-align: right">9,383</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">19</td>
+    <td style="text-align: right">74</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-04</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">6,141</td>
+    <td style="text-align: right">58</td>
+    <td style="text-align: right">24</td>
+    <td style="text-align: right">17</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-05</td>
+    <td style="text-align: right">43</td>
+    <td style="text-align: right">27,842</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">27</td>
+    <td style="text-align: right">58</td>
+    <td style="text-align: right">13</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-06</td>
+    <td style="text-align: right">85</td>
+    <td style="text-align: right">28,819</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">28</td>
+    <td style="text-align: right">44</td>
+    <td style="text-align: right">26</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-07</td>
+    <td style="text-align: right">118</td>
+    <td style="text-align: right">30,882</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">40</td>
+    <td style="text-align: right">38</td>
+    <td style="text-align: right">19</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-08</td>
+    <td style="text-align: right">130</td>
+    <td style="text-align: right">31,341</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: right">83</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-09</td>
+    <td style="text-align: right">145</td>
+    <td style="text-align: right">25,562</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: right">87</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-10</td>
+    <td style="text-align: right">149</td>
+    <td style="text-align: right">26,111</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">88</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-11</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">52</td>
+    <td style="text-align: right">100</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2024-12</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,547</td>
+    <td style="text-align: right">75</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">24</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-01</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">94</td>
+    <td style="text-align: right">100</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-02</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,610</td>
+    <td style="text-align: right">48</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: right">49</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-03</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,682</td>
+    <td style="text-align: right">61</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">37</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,784</td>
+    <td style="text-align: right">56</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: right">37</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,860</td>
+    <td style="text-align: right">47</td>
+    <td style="text-align: right">0</td>
+    <td style="text-align: right">51</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,900</td>
+    <td style="text-align: right">21</td>
+    <td style="text-align: right">25</td>
+    <td style="text-align: right">52</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">2,699</td>
+    <td style="text-align: right">25</td>
+    <td style="text-align: right">31</td>
+    <td style="text-align: right">43</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">2,740</td>
+    <td style="text-align: right">32</td>
+    <td style="text-align: right">35</td>
+    <td style="text-align: right">32</td>
+    <td style="text-align: right">0</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: right">1,945</td>
+    <td style="text-align: right">36</td>
+    <td style="text-align: right">30</td>
+    <td style="text-align: right">33</td>
+    <td style="text-align: right">0</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
+<h2 class="toc" id="api_access">API access</h2>
+
+<p><span>179</span> queries have been made by the user “API User (Peregrine)”. This is apparently some kind of integration with other information systems. <a href="https://california.public.law/codes/civil_code_section_1798.90.52">California Civil Code section 1798.90.52</a> states:</p>
+
+<blockquote>
+  <p>If an ALPR operator accesses or provides access to ALPR information, the ALPR operator shall do both of the following:</p>
+  <p>(a) Maintain a record of that access. At a minimum, the record shall include all of the following:</p>
+  <p>[...]</p>
+  <p>(3) The username of the person who accesses the information, and, as applicable, the organization or entity with whom the person is affiliated.</p>
+</blockquote>
+
+<p>It is unclear whether this should be interpreted as “All accesses must be done by a person and ...”; or “If the access is made by a person, then ...” (but then it would be enough to always access the data using an alternate tool to circumvent the requirement).</p>
+
+<hr class="eod"/>
+
+</body>
+</html>

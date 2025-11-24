@@ -1,0 +1,72 @@
+https://www.muckrock.com/foi/denver-145/open-records-request-flock-logs-195492/#files
+
+It seems that there are two answers.
+
+The first with the files Denver...{1,2,3,4}.cvs, which cover 2024-06-01
+through 2025-06-13.
+
+The second with the files 0{1,2}...xlsx, which cover 2024-06-01
+through 2025-10-31.
+
+
+
+
+01_Requested_Organization_Logs.xlsx
+2024-06-01 00:15:09-07 | 2025-10-31 22:17:27-07
+695372
+ Adams County CO SO
+ Arapahoe County CO SO
+ Arvada CO PD
+ Aurora CO PD
+ Boulder CO PD
+ Boulder County CO SO
+ Brighton CO PD
+ Broomfield CO PD
+ CO - Colorado Bureau of Investigation
+ Cherry Hills Village CO PD
+ Colorado Springs CO PD
+ Denver CO PD
+ Douglas County CO SO
+ Edgewater CO PD
+ El Paso CO SO
+ Englewood CO PD
+ Federal Heights CO PD
+ Jefferson County CO SO
+ Lakewood CO PD
+ Littleton CO PD
+ Longmont CO PD
+ Louisville CO PD
+ Loveland CO PD
+ Morrison CO PD
+ Parker CO PD
+ Rocky Mountain Information Network (RMIN/RISS) AZ [DEACTIVATED]
+ Thornton CO PD
+ Westminster CO PD
+(28 rows)
+
+02_Requested_Organization_Logs.xlsx
+2024-06-02 13:37:38-07 | 2025-10-21 12:21:30-07
+19610
+ ATF Louisville KY [inactive]
+ ATF Nashville TN
+ Davis Metro Narcotics Strike Force UT
+ Homeland Security Investigations [Federal] [Inactive]
+ National Center for Missing & Exploited Children [NCMEC]
+ North TX Anti-Gang Center (TAG)
+ Northern Colorado Intelligence Unit CO
+ US - GSA Office of Inspector General [Federal]
+ US Postal Inspection Service [Federal]
+
+
+1.csv  2024-05-31 23:02:22-07 | 2024-09-30 22:59:57-07
+2.csv  2024-09-01 19:27:37-07 | 2025-01-31 14:20:42-08
+3.csv  2025-01-01 01:44:16-08 | 2025-03-31 16:32:04-07
+4.csv  2025-03-01 13:34:20-08 | 2025-06-13 13:12:21-07
+01
+
+1000000
+1000000
+1000000
+540043
+
+4255025

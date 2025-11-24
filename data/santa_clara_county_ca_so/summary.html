@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Santa Clara County Office of the Sheriff ALPR audit</title>
+
+    <style>
+@import url(/style/style1.css);
+
+table { border-collapse: collapse; border-spacing: 0.5em; }
+
+#t1 td {  border-top: 1px solid; }
+
+th  { border-top: 1px solid; border-bottom: 1px solid;
+      font-weight: normal; }
+
+th, td { padding: 0 0.5em 0 0.5em; }
+
+h2 { border-top: 1px solid; text-align: left; }
+
+    </style>
+
+    <script src='/style/style1.js'> </script>
+  </head>
+
+<body>
+
+ <h1>Santa Clara County Office of the Sheriff ALPR usage</h1>
+ <p class="date">October 13, 2025</p>
+
+<p id='toc'><span>Table of contents</span></p>
+
+<p>&#xa0;</p>
+
+<p>This report is based on a California Public Record Act request for data related to the ALPR system operated by the Santa Clara County Office of the Sheriff (hereafter <insert f="dataorg_short.html"/>), and covers the period Mars 1, 2024 through September 15, 2025.</p>
+
+<p>The <insert f="dataorg_short.html"/> decided to redact the case number and reason from the Organization and Network audits. Consequently, there is not enough data to reconstruct (even approximately) cases and each query is treated as a separate case.</p>
+
+<p>The <insert f="dataorg_short.html"/> provides public safety services for Los Altos Hills, Saratoga, Cupertino and unincorporated areas of the county.</p>
+
+<p>&#xa0;</p>
+
+<p>The <a href="https://transparency.flocksafety.com/santa-clara-county-ca-so">Transparency portal</a>.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='sharing_audit'>1:1 Sharing audit</h2>
+
+<p>Under 1:1 Sharing, each agency decides which other agencies can access its data. Agency A can share with agency B without B sharing with A.</p>
+
+<p><insert f="dataorg_short.html"/> shares its “City of Los Altos Hills CA” network with the “Los Altos Hills - Town” agency. This is the only 1:1 sharing of the <insert f="dataorg_short.html"/> data.</p>
+
+<p><insert f='sharing_ny.count'/> agencies share their data with <insert f="dataorg_short.html"/>, including <insert f='pd_agencies_non_ca.count'/> agencies outside of California:</p>
+
+<insert f='pd_agencies_non_ca.html'/>
+
+<p>In Saratoga, neighborhoods organized as Landscape and Lighting districts can request and pay for the installation of Flock cameras. It seems that in the Flock system, those neighborhoods are treated as agencies, which then share their data with <insert f="dataorg_short.html"/>. In any case, here is the list of “agencies” that do not have “PD” or “SO” in their name and share their data with <insert f="dataorg_short.html"/>.</p>
+
+<insert f='non_pd_agencies.html' i='t1'/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='sharing_in_california'>Sharing in California</h2>
+
+<p>Since <insert f="recent.html"/>, <insert f="dataorg_short.html"/> does not share its data with any other agency, in California or not (except for the Los Altos Hills cameras with the Town of Los Altos Hills). Prior to that date, <insert f="net.statewide_sharing.count"/> agencies accessed  data (either by 1:1 sharing or Statewide lookup). The 25 agencies with the largest number of cases:</p>
+
+<insert f="net.cases_by_org_ca_25.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_nb_queries">Organization audit: number of queries</h2>
+
+<p>Most of the <insert f="in_org.count"/> queries made by <insert f="dataorg_short.html"/> involve, among others, cameras controlled by the <insert f="dataorg_short.html"/>. <insert f="in_org_not_in_network.count"/> queries involve only non-<insert f="dataorg_short.html"/> cameras.</p>
+
+<insert f="org.cases_by_month.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_nb_cameras">Organization audit: number of agencies and cameras</h2>
+
+<p>The first column is the number of agencies that queried the data, which by construction must be 1 in an organization audit.</p>
+
+<p>The second column is the maximum number of cameras involved in a query. While most agencies operate a relatively small number of cameras, they can search data captured by other agencies. </p>
+
+<p>The next column, “% 0-100” is the percentage of queries that involved less than 100 cameras. Similarly, the following columns are the percentages for 100 to 1k cameras, 1k to 10k cameras and more than 10k cameras respectively.</p>
+
+<insert f="org.devices_by_month.html"/>
+
+<p><insert f="dataorg_short.html"/> redacted  out the number of cameras for the period June 1 2024 to June 23 2025.</p>
+
+<p>We can see the number of cameras growing, presumably as more agencies share their data with <insert f="dataorg_short.html"/>.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_personnel">Organization audit: personnel</h2>
+
+<p>The <insert f="dataorg_short.html"/> elected to redact the user names from some of the Organization queries, leaving 107 distinct user names.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='net_audit_nb_queries'>Network audit: number of queries</h2>
+
+<p>In addition to the situation over the whole audited period, we also look at the last period, when sharing stopped:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>since</th>
+      <th>cases</th>
+      <th>queries</th>
+      <th>agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>March 1, 2024</td>
+      <td style="text-align: right"><insert f="net.cases_all.count"/></td>
+      <td style="text-align: right"><insert f="net.queries_all.count"/></td>
+      <td style="text-align: right"><insert f="orgs_all.count"/></td>
+    </tr>
+    <tr>
+      <td><insert f='recent.html'/></td>
+      <td style="text-align: right"><insert f="net.cases_recent.count"/></td>
+      <td style="text-align: right"><insert f="net.queries_recent.count"/></td>
+      <td style="text-align: right"><insert f="orgs_recent.count"/></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Over the recent period, that amounts to one query every hour.</p>
+
+<insert f="net.cases_by_month.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='net_audit_nb_cameras'>Network audit: number of agencies and cameras</h2>
+
+<p>See <a href='#org_audit_nb_cameras'>this previous section</a> for the meaning of the columns.</p>
+
+<insert f="net.devices_by_month.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='api_access'>API access</h2>
+
+<p><insert f="org.api_queries.count"/> queries have been made by the user “API User (Peregrine)”. This is apparently some kind of integration with other information systems. <a href="https://california.public.law/codes/civil_code_section_1798.90.52">California Civil Code section 1798.90.52</a> states:</p>
+
+<blockquote>
+  <p>If an ALPR operator accesses or provides access to ALPR information, the ALPR operator shall do both of the following:</p>
+  <p>(a) Maintain a record of that access. At a minimum, the record shall include all of the following:</p>
+  <p>[...]</p>
+  <p>(3) The username of the person who accesses the information, and, as applicable, the organization or entity with whom the person is affiliated.</p>
+</blockquote>
+
+<p>It is unclear whether this should be interpreted as “All accesses must be done by a person and ...”; or “If the access is made by a person, then ...” (but then it would be enough to always access the data using an alternate tool to circumvent the requirement).</p>
+
+<hr class='eod'/>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Los Altos Police Department ALPR usage</title>
+
+    <style>
+@import url(/style/style1.css);
+
+table { border-collapse: collapse; border-spacing: 0.5em; }
+
+th  { border-top: 1px solid; border-bottom: 1px solid;
+      font-weight: normal; }
+
+th, td { padding: 0 0.5em 0 0.5em; }
+
+h2 { border-top: 1px solid; text-align: left; }
+
+    </style>
+
+    <script src='/style/style1.js'> </script>
+  </head>
+
+<body>
+
+ <h1>Los Altos Police Department ALPR usage</h1>
+ <p class="date">November 22, 2025</p>
+
+<p id='toc'><span>Table of contents</span></p>
+
+<p>&#xa0;</p>
+
+<p>This report is based on data obtained via California Public Record Act requests <a href='https://losaltosca.nextrequest.com/requests/25-312'>25-312</a> and <a href='https://losaltosca.nextrequest.com/requests/25-402'>25-402</a> for data related to the ALPR system operated by the Los Altos Police Department (hereafter <insert f="dataorg_short.html"/>). It covers the period <insert f='net.first_query.html'/> through <insert f='net.last_query.html'/>.</p>
+
+<p>&#xa0;</p>
+
+<p>The <a href="https://transparency.flocksafety.com/los-altos-ca-pd">Transparency portal</a>.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='sharing_audit'>1:1 Sharing audit</h2>
+
+<p>Under 1:1 Sharing, each agency decides which other agencies can access its data. Agency A can share with agency B without B sharing with A.</p>
+
+<p><insert f="dataorg_short.html"/> and X allow reciprocal searches: <insert f='sharing_yy.count'/> agencies, including <insert f='sharing_yy_neighbors.count'/> neighbors:</p>
+
+<insert f='sharing_yy_neighbors.html'/>
+
+<p><insert f="dataorg_short.html"/> allows searches, but X does not: <insert f='sharing_yn.count'/> agencies, including <insert f='sharing_yn_neighbors.count'/> neighbor:</p>
+
+<insert f='sharing_yn_neighbors.html'/>
+
+<p><insert f="dataorg_short.html"/> does not allow searches but X does: <insert f='sharing_ny.count'/> agencies, including <insert f='sharing_ny_neighbors.count'/> neighbors:</p>
+
+<insert f='sharing_ny_neighbors.html'/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='sharing_outside_ca'>Sharing outside California</h2>
+
+<p>Prior to <insert f="recent.html"/>, there are numerous queries from agencies outside California.</p>
+
+<p><insert f='net.cases_by_org_non_ca.count'/> agencies outside California accessed the <insert f="dataorg_short.html"/> data, with <insert f='net.cases_non_ca.count'/> cases / <insert f='net.queries_non_ca.count'/> queries. The 25 most active agencies:</p>
+
+<insert f='net.cases_by_org_non_ca_25.html'/>
+
+<p>Some are federal agencies, but with few queries:</p>
+
+<insert f='net.cases_by_org_federal.html'/>
+
+<p>These queries are clear violations of California SB 40, as California state and local law enforcement agencies have been <a href="https://oag.ca.gov/news/press-releases/attorney-general-bonta-advises-california-law-enforcement-legal-uses-and">reminded by the California Attorney General</a> in 2023.</p>
+
+<p>We can see a few queries by <i>Flock RTCC</i>, which does not sound like a public agency, in California or not.</p>
+
+<p>There are also a few queries by <i>Decommissioned Org</i>. Most likely, that organization was not born that way, and its name was changed along the way. That of course comprimises the integrety of the logs, and is tampering (intentional or not; consequential or not).</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='statewide_lookup'>Sharing via Statewide lookup</h2>
+
+<p><insert f="dataorg_short.html"/> participates in Statewide lookup. This allows California agencies to search the <insert f="dataorg_short.html"/> data without any prior agreement on sharing, but limits the searches to full license plates.</p>
+
+<p><insert f="net.recent_statewide_sharing.count"/> agencies without 1:1 Sharing have accessed the <insert f="dataorg_short.html"/> data since <insert f='recent.html'/>.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_nb_queries">Organization audit: number of queries</h2>
+
+<p>Most of the <insert f="in_org.count"/> queries made by <insert f="dataorg_short.html"/> involve, among others, cameras controlled by the <insert f="dataorg_short.html"/>. <insert f="in_org_not_in_network.count"/> queries involve only non-<insert f="dataorg_short.html"/> cameras.</p>
+
+<p>The number of cases and queries is relatively stable:</p>
+
+<insert f="org.cases_by_month.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_nb_cameras">Organization audit: number of agencies and cameras</h2>
+
+<p>The first column is the number of agencies that queried the data, which by construction must be 1 in an organization audit.</p>
+
+<p>The second column is the maximum number of cameras involved in a query. While most agencies operate a relatively small number of cameras, they can search data captured by other agencies. </p>
+
+<p>The next column, “% 0-100” is the percentage of queries that involved less than 100 cameras. Similarly, the following columns are the percentages for 100 to 1k cameras, 1k to 10k cameras and more than 10k cameras respectively.</p>
+
+<insert f="org.devices_by_month.html"/>
+
+<p>In the August-November 2024 period, there are few queries with a large number of cameras, so the maximum number of cameras is subject to wide variations. The low number in January 2025 was caused by a <a href='../../terminology.html#missing'>systemic problem</a> with the Flock system. It remains that over the long term, more and more cameras are accessible.</p>
+
+<p>If we ignore those months, it is clear that there is a bimodal distribution of the number of cameras: either a few cameras are searched (less than 100), or there is a broad search, with more than 1,000 cameras.</p>
+
+<p>Also apparent is the increase in the proportion of broad queries over the last six months, roughly from 30% to 60%.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id="org_audit_personnel">Organization audit: personnel</h2>
+
+<p>The <insert f="dataorg_short.html"/> elected to redact the user names from the both the Organization and Network audits.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='net_audit_nb_queries'>Network audit: number of queries</h2>
+
+<p>In addition to the situation over the whole audited period, we also look at the period since <insert f='recent.html'/>, when sharing outside California stopped:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>since</th>
+      <th>cases</th>
+      <th>queries</th>
+      <th>agencies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><insert f='net.first_query.html'/></td>
+      <td style="text-align: right"><insert f="net.cases_all.count"/></td>
+      <td style="text-align: right"><insert f="net.queries_all.count"/></td>
+      <td style="text-align: right"><insert f="orgs_all.count"/></td>
+    </tr>
+    <tr>
+      <td><insert f='recent.html'/></td>
+      <td style="text-align: right"><insert f="net.cases_recent.count"/></td>
+      <td style="text-align: right"><insert f="net.queries_recent.count"/></td>
+      <td style="text-align: right"><insert f="orgs_recent.count"/></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Over the recent period, that amounts to one query every 10 seconds, and one case every 90 seconds.</p>
+
+<p>The number of cases has been steadily increasing each month, with a reset when sharing outside of California was stopped:</p>
+
+<insert f="net.cases_by_month.html"/>
+
+<p>It is also worth noting that for every 1,000 queries made on <insert f="dataorg_short.html"/> data, there is only 1 made by <insert f="dataorg_short.html"/>, the 999 others are made by other agencies (roughly).</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='net_audit_nb_cameras'>Network audit: number of agencies and cameras</h2>
+
+<p>See <a href='#org_audit_nb_cameras'>this previous section</a> for the meaning of the columns.</p>
+
+<insert f="net.devices_by_month.html"/>
+
+<p>As we have seen in the previous section, the queries by other agencies vastly dominate. From the point of view of those agencies, <insert f="dataorg_short.html"/> is just one of many agencies, more or less geographically distant. When <insert f="dataorg_short.html"/>’s data is searched, there are probably many other agencies searched as well, and therefore many cameras involved, hence the high proportion of broad searches.</p>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='california_lookup'>Top agencies accessing <insert f="dataorg_short.html"/> data</h2>
+
+<p>The 25 agencies with the largest number of cases involving <insert f="dataorg_short.html"/> data since <insert f='recent.html'/>:</p>
+
+<insert f="net.cases_by_org_recent_25.html"/>
+
+<p>Our neighbor agencies, since <insert f='recent.html'/>:</p>
+
+<insert f="net.cases_by_org_recent_neighbors.html"/>
+
+<!--___________________________________________________________-->
+<h2 class='toc' id='problematic_queries'>Potentially problematic queries</h2>
+
+<p>The Flock system filters queries by keywords, in an attempt to avoid uses prohibited by SB 40, but we do not know what those keywords are.</p>
+
+<p>Here are cases/queries with “ICE”, “DHS”, “HSI” (which can stand for Homeland Security Investigation), “CBP”, “FBI”, “ATF”, “AFT” (typo for “ATF”), “Marshal”, “Marshals”, “Marshall”, “Marshalls”, “border”, or “immigration” as a word in the case number or reason.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>since</th>
+      <th>cases</th>
+      <th>queries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><insert f='net.first_query.html'/></td>
+      <td style="text-align: right"><insert f="net.keywords_case_all.count"/></td>
+      <td style="text-align: right"><insert f="net.keywords_query_all.count"/></td>
+    </tr>
+    <tr>
+      <td><insert f='recent.html'/></td>
+      <td style="text-align: right"><insert f="net.keywords_case_recent.count"/></td>
+      <td style="text-align: right"><insert f="net.keywords_query_recent.count"/></td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>The cases since <insert f='recent.html'/>:</p>
+
+  <insert f="net.keywords_case_recent.html"/>
+
+<p>(The August 6, 2025, Los Altos Town Crier article mentions “Four June Riverside County Sheriff’s Office network searches”. Those form a single case, on June 30.)</p>
+
+<hr class='eod'/>
+
+<div class='history'>
+  <p class='historyentry'>November 22, 2025: Treat <i>Decommissioned Org</i>, <i>Flock RTCC</i> and <i>Loma Linda Healthcare System CA Veterans Affairs PD [Federal]</i> as non-California agencies.</p>
+
+  <p class='historyentry'>October 13, 2025: first version.</p>
+</div>
+
+
+</body>
+</html>

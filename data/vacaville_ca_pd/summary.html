@@ -25,7 +25,7 @@ h2 { border-top: 1px solid; text-align: left; }
 <body>
 
  <h1>Vacaville Police Department ALPR usage</h1>
- <p class="date">October 13, 2025</p>
+ <p class="date">November 25, 2025</p>
 
 <p id='toc'><span>Table of contents</span></p>
 
@@ -124,6 +124,32 @@ h2 { border-top: 1px solid; text-align: left; }
 <insert f="net.cases_by_org_25.html"/>
 
 <!--___________________________________________________________-->
+<h2 class='toc' id='problematic_queries'>Potentially problematic queries</h2>
+
+<p>The Flock system filters queries by keywords, in an attempt to avoid uses prohibited by SB 40, but we do not know what those keywords are.</p>
+
+<p>Here are cases/queries with “ICE”, “DHS”, “HSI” (which can stand for Homeland Security Investigation), “CBP”, “FBI”, “ATF”, “AFT” (typo for “ATF”), “Marshal”, “Marshals”, “Marshall”, “Marshalls”, “border”, or “immigration” as a word in the case number or reason.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>cases</th>
+      <th>queries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right"><insert f="net.keywords_case_all.count"/></td>
+      <td style="text-align: right"><insert f="net.keywords_query_all.count"/></td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>The cases:</p>
+
+  <insert f="net.keywords_case_all.html"/>
+
+<!--___________________________________________________________-->
 <h2 class='toc' id='api_access'>API access</h2>
 
 <p><insert f="org.api_queries.count"/> queries have been made by the users “API User (Peregrine)” and “Peregrine API  Outbound Integration”. This is apparently some kind of integration with other information systems. <a href="https://california.public.law/codes/civil_code_section_1798.90.52">California Civil Code section 1798.90.52</a> states:</p>
@@ -138,6 +164,13 @@ h2 { border-top: 1px solid; text-align: left; }
 <p>It is unclear whether this should be interpreted as “All accesses must be done by a person and ...”; or “If the access is made by a person, then ...” (but then it would be enough to always access the data using an alternate tool to circumvent the requirement).</p>
 
 <hr class='eod'/>
+
+<div class='history'>
+  <p class='historyentry'>November 25, 2025: Added the Potentially problematic queries.</p>
+
+  <p class='historyentry'>October 13, 2025: first version.</p>
+</div>
+
 
 </body>
 </html>

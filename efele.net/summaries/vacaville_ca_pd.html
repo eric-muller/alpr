@@ -23,7 +23,7 @@ h2 { border-top: 1px solid; text-align: left; }
 <body>
 
  <h1>Vacaville Police Department ALPR usage</h1>
- <p class="date">October 13, 2025</p>
+ <p class="date">November 25, 2025</p>
 
 <p id="toc"><span>Table of contents</span></p>
 
@@ -481,6 +481,2336 @@ h2 { border-top: 1px solid; text-align: left; }
 </table>
 
 <!--___________________________________________________________-->
+<h2 class="toc" id="problematic_queries">Potentially problematic queries</h2>
+
+<p>The Flock system filters queries by keywords, in an attempt to avoid uses prohibited by SB 40, but we do not know what those keywords are.</p>
+
+<p>Here are cases/queries with “ICE”, “DHS”, “HSI” (which can stand for Homeland Security Investigation), “CBP”, “FBI”, “ATF”, “AFT” (typo for “ATF”), “Marshal”, “Marshals”, “Marshall”, “Marshalls”, “border”, or “immigration” as a word in the case number or reason.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>cases</th>
+      <th>queries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right"><span>328</span></td>
+      <td style="text-align: right"><span>1,943</span></td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>The cases:</p>
+
+  <table>
+  <tr>
+    <th style="text-align: center">last_search_time</th>
+    <th style="text-align: center">nb_queries</th>
+    <th style="text-align: center">agency</th>
+    <th style="text-align: center">case_number</th>
+    <th style="text-align: center">reason</th>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-01 11:37:57-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Westminster CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Cb fbi Hawaii</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-01 13:12:33-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">CHP border div log #228 4/1/25</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 15:28:32-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Wanted Vehicle by HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 09:57:37-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Atwater CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">aod us marshall</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 10:24:48-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Los Angeles County CA SD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI RFI LA02R525LA0003</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 10:33:25-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI ICAC Tip</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 11:27:57-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 46H-LA-3838955</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 14:03:07-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Contra Costa County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">487 - HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 14:18:22-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Beaumont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">DHS 187</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 14:19:54-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Contra Costa County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">487 - hsi</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-08 16:59:12-07</td>
+    <td style="text-align: right">24</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Assisting HSI investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-02 15:52:24-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI case #SD13R23D0009</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-03 12:21:08-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Contra Costa County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">487 HSI inv</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-08 04:05:08-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Arrest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-03 20:17:08-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Fbi 245c-sf-3201100</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-04 09:47:06-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Case #OX13CS24OX0002</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-06 12:29:22-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">San Ramon CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">*** BOLO Develop PC *** Suspect vehicle used in repeat ORC felony thefts from Marshalls in Danville. Vehicle typically travels through San Ramon to the freeway after committing thefts. If located, develop PC to stop, ID all occupants, and forward information to DPD.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-07 17:24:11-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-09 12:25:20-07</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI #SY13CR23SY0012</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-09 14:37:19-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI SD13R23SD0009</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-10 02:49:25-07</td>
+    <td style="text-align: right">20</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI NARCS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-10 13:43:55-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FF04HR23FF0001 for HSI Gardiner for Train burglary</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-10 15:25:22-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Salinas CA PD</td>
+    <td style="text-align: left">211 FBI</td>
+    <td style="text-align: left">211 FBI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-11 21:42:04-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">hsi pacific blue</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-13 10:33:10-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-13 20:04:49-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Beaumont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">DHS 187</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-13 21:04:00-07</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF investigation firearm trafficking suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-14 02:03:10-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Lodi CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">marshall warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-14 09:19:17-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Fairfield CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-15 11:09:57-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 192B-SF-3965630</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-15 17:08:38-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left">784065-25-00574</td>
+    <td style="text-align: left">ATF Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-16 10:02:26-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Grass Valley CA PD</td>
+    <td style="text-align: left">FBI out of Sac. Hugo</td>
+    <td style="text-align: left">Wanted Felon</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 14:12:29-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Pacific Blue</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-17 22:33:01-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">DHS CASE</td>
+    <td style="text-align: left">AMBER ALERT</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-18 00:50:19-07</td>
+    <td style="text-align: right">10</td>
+    <td style="text-align: left">Beaumont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">DHS amber alert</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-18 01:01:11-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">#o25108002</td>
+    <td style="text-align: left">amber alert veh AOD to DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-21 17:39:48-07</td>
+    <td style="text-align: right">22</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI red hook</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-21 12:20:08-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+    <td style="text-align: left">Auto Burglary/ Suspicious Vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-21 13:24:20-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Fresno CA PD</td>
+    <td style="text-align: left">25-14546</td>
+    <td style="text-align: left">ATF Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-26 16:21:56-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Arrest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-22 13:24:09-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Case# SD131R23SD0009</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-22 20:47:30-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ICE case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 08:09:01-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Diego County CA SD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">POINDEXTER HSI CASE</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 08:38:39-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Assisting HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 15:29:06-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI FEMA Fraud</td>
+    <td style="text-align: left">Sus veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 20:55:45-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Narco Case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 22:38:17-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 245E-NY-3891665; suspect in lives in Irvine</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-23 22:50:37-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Case #: 245E-NY-3891665 suspect lives in Irvine</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-24 07:38:35-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI FEMA Fraud - Lowe</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-25 11:22:23-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI case #SY131R23SY0014</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-25 11:23:09-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Officer Safety flagged vehicle per border patrol</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-25 17:40:21-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">El Monte CA PD</td>
+    <td style="text-align: left">25-016880</td>
+    <td style="text-align: left">FBI SEARCH WARRANT</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-28 07:51:10-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 196D-SF-3728957</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-28 14:21:48-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left">Warrant locate - FBI</td>
+    <td style="text-align: left">wanted suspect locate</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-29 12:57:19-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">207 DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-29 14:28:50-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Op</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-04-30 10:10:43-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Marshals Case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-02 00:25:30-07</td>
+    <td style="text-align: right">56</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-01 11:53:36-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI Guardian 1216245_SF </td>
+    <td style="text-align: left">Locate FBI Impersonator</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-01 12:18:11-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">City of Riverside CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Marshall wsr</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-02 00:29:13-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">HSI Narcotics</td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-02 11:04:31-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left">ATF 25-13538-4</td>
+    <td style="text-align: left">narcotics sales</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-02 13:12:43-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left">oc13mr240c0023</td>
+    <td style="text-align: left">ociac cbp</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-02 15:33:24-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">fbi 196d-sf-3728957</td>
+    <td style="text-align: left">locate vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-05 09:51:32-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 1216245_sf</td>
+    <td style="text-align: left">Locate FBI Impersonator</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-05 09:52:57-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Fbi 1216245_sf</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-06 13:41:11-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI case #SY131R23SY0014</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-06 13:47:52-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI #SY131R23SY0014</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-16 13:17:39-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">Anaheim CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI #281D- LA-3654760</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-07 10:34:10-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Case #784010-23-0015</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-08 05:31:48-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Case#784010-23-0015</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-08 14:11:46-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI LA02O824LA0001</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-13 14:15:16-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Marshal case 11038431</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-15 10:31:44-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI BOLO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-14 08:10:20-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Mateo County CA SO</td>
+    <td style="text-align: left">ID fbi </td>
+    <td style="text-align: left">narcotics case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-14 11:50:42-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Costa Mesa CA PD</td>
+    <td style="text-align: left">ATF #787015-23-0021</td>
+    <td style="text-align: left">ATF has subject who has possible returned to California and might be living in Costa Mesa, vehicle is associated to subject.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-14 15:37:56-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Costa Mesa CA PD</td>
+    <td style="text-align: left">ATF #787015-23-0021</td>
+    <td style="text-align: left">ATF has subject who has possibly returned to California and might be living in Costa Mesa, vehicle is associated to subject.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-14 12:01:30-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Costa Mesa CA PD</td>
+    <td style="text-align: left">AFT #787015-23-0021</td>
+    <td style="text-align: left">ATF has a subject under investigation that was out of California and might not be living in Costa Mesa, vehicle is associated with subject.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-15 11:02:26-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left">narc arrest</td>
+    <td style="text-align: left">aod atf</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-16 12:15:44-07</td>
+    <td style="text-align: right">10</td>
+    <td style="text-align: left">Beaumont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-15 16:29:25-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Murrieta CA PD</td>
+    <td style="text-align: left">GT25-135-0001</td>
+    <td style="text-align: left">atf investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-16 12:18:07-07</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: left">Cathedral City CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF AOD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-16 12:17:01-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Cathedral City CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">AtF AOD</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-19 13:11:15-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF 250368 SC</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-19 14:06:54-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow Up HSI CA02TS21CA0001</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-19 15:37:28-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI JTTF Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-20 05:25:32-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Burbank CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI warrant 8007 N Cabernet</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-20 10:33:52-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Colma CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">C25-0520-01 HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-20 13:57:26-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+    <td style="text-align: left">Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-20 14:26:27-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI SATG</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-21 05:25:52-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Costa Mesa CA PD</td>
+    <td style="text-align: left">ATF #787015-23-0021</td>
+    <td style="text-align: left">AFT requested flock information for possible suspect that might be residing in Costa Mesa</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-21 05:36:41-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Costa Mesa CA PD</td>
+    <td style="text-align: left">ATF #787015-23-0021</td>
+    <td style="text-align: left">AFT requested flock information for possible suspect that might be residing in Costa Mesa and his associates.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-22 09:52:59-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Assisting HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-22 13:39:09-07</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">atf vegas inv</td>
+    <td style="text-align: left">gun inv</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-22 14:47:57-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">La Habra CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Escapee</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-22 14:48:55-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Arrest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-27 11:09:25-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI JTTF case LA-4023850</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-27 11:27:02-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI JTTF case LA-3959929</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-27 14:35:39-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI case for elder abuse</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-29 11:02:42-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Azusa CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI fraud case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-03 09:45:09-07</td>
+    <td style="text-align: right">10</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Case#25-00574</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-29 17:25:52-07</td>
+    <td style="text-align: right">19</td>
+    <td style="text-align: left">East Palo Alto CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">AOA marshal US</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-05-29 16:24:42-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">fbi 281q-la-8709941</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-03 11:44:07-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Lead</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-03 12:14:01-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">FBI # 1228855</td>
+    <td style="text-align: left">investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-04 06:41:35-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI Lakota Man</td>
+    <td style="text-align: left">Sus veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-05 05:57:06-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI SATG</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-08 14:59:32-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left">ice protests 2025</td>
+    <td style="text-align: left">poss involved</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 08:28:34-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow Up HSI Green Mirror</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-09 14:32:03-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ICE PROTEST</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-10 13:55:42-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Kidnapping Case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-10 15:40:09-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">NA</td>
+    <td style="text-align: left">FBI Kidnapping</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-10 17:32:56-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 10:55:11-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow UP HSI Green Mirror</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-11 08:17:17-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles County CA SD</td>
+    <td style="text-align: left">bb0b-4676-9ef8-805e71220924</td>
+    <td style="text-align: left">FBI Wanted</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-20 12:20:41-07</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Kidnapping</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-11 15:04:08-07</td>
+    <td style="text-align: right">20</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI Kidnapping</td>
+    <td style="text-align: left">Locate vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-11 14:38:18-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI Kidnapping</td>
+    <td style="text-align: left">FBI Kidnapping</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-11 19:11:52-07</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI case subject Reyna</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-11 19:30:27-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Fairfield CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">fbi person of interest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 19:01:59-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 10:00:53-07</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: left">Anaheim CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ICE</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 13:45:47-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Chula Vista CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI SY131R23SY0014</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 15:49:33-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Beaumont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Buy Walk</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 15:46:19-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI JTTF Investigation</td>
+    <td style="text-align: left">JTTF investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 15:48:02-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI JTTF Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 15:55:23-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-12 22:01:06-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI BOLO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 07:26:10-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hemet CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Wanted</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 09:45:56-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBi money laundering inve</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 09:48:05-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Fbi moneylaundering</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 09:49:09-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Fbi money laundering</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 10:27:14-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Joaquin County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">BOL FBI 2025-a7589b83</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 11:50:59-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Bolo DOFFING Brian</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-13 12:47:16-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI BOLO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-16 14:14:03-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case NY-3794695</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-16 05:34:59-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI BOLO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-16 14:22:02-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case NY-379695</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-16 16:52:54-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">I25015600 for HSI Analyst Chacon for gang assault case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-24 21:27:21-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Arrest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-17 09:04:08-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">I25015600 HSI AZ Agent Chacon for gang</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-17 10:03:08-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">I25015600 HSI AZ Agent Chacon for gang assault</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-17 11:22:19-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI SATG BOLO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-17 11:54:28-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Diego County CA SD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FTF CABRAL MARSHALL INV</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 00:34:53-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">R/O has marshall warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 09:47:08-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">25097764 245PC INV SUSP Archane Vict Marshall</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 12:00:12-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Diego County CA SD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">suspicious border crossings</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-25 17:28:09-07</td>
+    <td style="text-align: right">9</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF /git detectives investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 17:35:13-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">AOD US MARSHAL</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 19:04:01-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Assist Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-18 23:41:25-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI NARS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-20 09:20:02-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-20 10:43:20-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Kidnapping Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-20 12:28:10-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">fbi kidnapping</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-23 11:03:10-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Kidnapping Robbery</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-23 11:11:14-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Kidnapping</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-23 13:35:33-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">known sleight of hand suspect veh / FBI listserv email</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-23 20:27:51-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">fbi dangerous subject </td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-24 09:01:47-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left">SD FBI BOLO</td>
+    <td style="text-align: left">925 veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-24 11:58:07-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left">250612266</td>
+    <td style="text-align: left">FBI BOLO MH SUBJ THREATS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-27 02:03:24-07</td>
+    <td style="text-align: right">16</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-25 08:19:56-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left">CFS 250612266</td>
+    <td style="text-align: left">FBI BOLO MH SUBJ THREATS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-26 17:29:25-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Irvine CA PD</td>
+    <td style="text-align: left">250613830</td>
+    <td style="text-align: left">FBI JTTF surveilance</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-26 19:51:33-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">25097764 245PC INV SUSP ARCHAN VICT MARSHAL</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-26 23:43:58-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case LA-405610 subj veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-07 10:39:21-07</td>
+    <td style="text-align: right">15</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case LA-3794695</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-29 09:53:07-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Lake County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI Suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-30 01:11:57-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">ICE SW 062925</td>
+    <td style="text-align: left">ICE SW 062925</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-01 10:19:11-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow Up, HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-30 12:15:07-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Solano County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI DTO Case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-06-30 12:35:25-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case LA-379465</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-01 08:58:07-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">LA36BS25LA0002</td>
+    <td style="text-align: left">smuggling and dope hsi</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-02 14:16:57-07</td>
+    <td style="text-align: right">21</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25120031</td>
+    <td style="text-align: left">burglary 12017 marshall st</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-01 13:39:01-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">JTTF FBI LA-3794695</td>
+    <td style="text-align: left">Locate subject vehicle related to investigation.</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-01 13:32:32-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25120031</td>
+    <td style="text-align: left">Burglary 12017 Marshall St</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-01 15:40:08-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">atf case 784010230015 firearm suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-07 10:25:43-07</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">LA-3794695</td>
+    <td style="text-align: left">JTTF FBI subject vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-02 12:19:09-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Fresno CA PD</td>
+    <td style="text-align: left">FID 11684822</td>
+    <td style="text-align: left">Marshal Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-05 11:18:44-07</td>
+    <td style="text-align: right">9</td>
+    <td style="text-align: left">Garden Grove CA PD</td>
+    <td style="text-align: left">LA HSI</td>
+    <td style="text-align: left">Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-03 17:03:32-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25-723</td>
+    <td style="text-align: left">ATF /git detectives investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-07 09:49:58-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI Case LA-3794695</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-15 13:11:28-07</td>
+    <td style="text-align: right">19</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">JTTF FBI case LA-3794695</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-08 15:27:58-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25120031</td>
+    <td style="text-align: left">Attempt burglary 12017 marshall st</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-08 16:15:42-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Pomona CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF CASE</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-08 19:47:17-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">City of Riverside CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF Aguilar Long Beach</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-11 18:50:43-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">MN25-1919</td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 11:26:39-07</td>
+    <td style="text-align: right">42</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Wanted fugitive from US MARSHALLS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 12:15:27-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left">Gt25182002</td>
+    <td style="text-align: left">GT251820002 atf aid</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 12:36:49-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left">251890861</td>
+    <td style="text-align: left">TSA Airport DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 12:39:38-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 281E-SF-4069671</td>
+    <td style="text-align: left">Investigations</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 14:43:54-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">TSA Airport DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 15:41:17-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Garden Grove CA PD</td>
+    <td style="text-align: left">HSI LA 2025</td>
+    <td style="text-align: left">Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-10 19:54:10-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF /git detectives investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-11 05:57:20-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Locate FBI subj vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-14 15:37:02-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25-731</td>
+    <td style="text-align: left">ATF /git detectives investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-15 15:56:51-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Bakersfield CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-22 14:48:50-07</td>
+    <td style="text-align: right">13</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">hsi bullseye</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-24 13:00:14-07</td>
+    <td style="text-align: right">228</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Bullseye</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-16 10:11:16-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">HSI Narcs</td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-17 16:10:49-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">Inc250717003017</td>
+    <td style="text-align: left">ATF task force investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-21 12:01:13-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left">LA02PQ24SD0001</td>
+    <td style="text-align: left">Assisting HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-22 05:25:18-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Placer County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">sstf fbi</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-22 09:26:59-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">DHS mara burg</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-23 11:23:45-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI SF-3554385</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-23 23:47:46-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">RO Alicia Marshall 061696 1032F / 245A1</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-24 09:41:12-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI BA13JR25BA004</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-24 14:02:26-07</td>
+    <td style="text-align: right">14</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">250236417</td>
+    <td style="text-align: left">Us marshall warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-24 14:48:34-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Concord CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">us marshalls tracking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-03 09:34:26-07</td>
+    <td style="text-align: right">21</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 281ESF4069671</td>
+    <td style="text-align: left">Locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-28 14:36:04-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25-19635</td>
+    <td style="text-align: left">atf inv</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-29 05:10:22-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Burbank CA PD</td>
+    <td style="text-align: left">Fbi</td>
+    <td style="text-align: left">2514144</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-29 20:10:50-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Burbank CA PD</td>
+    <td style="text-align: left">Fbi</td>
+    <td style="text-align: left">Fbi Blevins</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-29 11:04:42-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF 2503686 MB</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-29 14:23:41-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Seal Beach CA PD</td>
+    <td style="text-align: left">invest seal beach</td>
+    <td style="text-align: left">marshalls ocr</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-29 15:06:10-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Irwindale CA PD</td>
+    <td style="text-align: left">SD02OM21SD0001</td>
+    <td style="text-align: left">HSI indictments</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-31 08:01:03-07</td>
+    <td style="text-align: right">64</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI LA02PQ24SD0001</td>
+    <td style="text-align: left">Sus vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-30 10:08:08-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI BA13JR25BA004 NK</td>
+    <td style="text-align: left">Sus vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-30 11:14:47-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI LA02PQ24SD0001</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-30 14:51:08-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 281ESF4069671</td>
+    <td style="text-align: left">Wanted Fugitive</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-30 15:40:50-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left">ORC Border Division</td>
+    <td style="text-align: left">Organized Retail Theft</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-30 17:21:17-07</td>
+    <td style="text-align: right">10</td>
+    <td style="text-align: left">Seal Beach CA PD</td>
+    <td style="text-align: left">250708330</td>
+    <td style="text-align: left">marshalls orc</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-31 09:33:39-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 281ESF4069671</td>
+    <td style="text-align: left">Wanted fugitive</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-07-31 22:36:50-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Fremont CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 211 warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-01 14:25:18-07</td>
+    <td style="text-align: right">8</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">AOA HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-04 09:43:33-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left">251820002</td>
+    <td style="text-align: left">GT251820002 atf aid</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-04 14:13:21-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left">GT251820002 atf aid</td>
+    <td style="text-align: left">GT251820002 atf aid</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-05 11:43:44-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI Bullseye</td>
+    <td style="text-align: left">sus veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-07 21:45:41-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Mountain View CA PD (Santa Clara County)</td>
+    <td style="text-align: left">HSI Case</td>
+    <td style="text-align: left">Wanted Suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-06 16:53:43-07</td>
+    <td style="text-align: right">9</td>
+    <td style="text-align: left">California Highway Patrol</td>
+    <td style="text-align: left">FBI / PENDING</td>
+    <td style="text-align: left">BOLO/Wanted Vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-06 14:08:25-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Santa Cruz CA PD</td>
+    <td style="text-align: left">39167</td>
+    <td style="text-align: left">FBI Wanted List</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-06 14:59:45-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Capitola CA PD</td>
+    <td style="text-align: left">9045</td>
+    <td style="text-align: left">FBI alert</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-07 08:25:57-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles County CA SD</td>
+    <td style="text-align: left">CHP 2800 related to ATF SW</td>
+    <td style="text-align: left">CHP2800</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-07 21:41:34-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Baldwin Park CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI ONTARIO</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-11 08:46:02-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Ventura CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 305I-LA-2554181</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-11 11:35:46-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA02TS21CA0001</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-15 11:38:18-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Turlock CA PD</td>
+    <td style="text-align: left">FBI</td>
+    <td style="text-align: left">Other</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-12 12:04:02-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">La Habra CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-13 05:13:20-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25-192090</td>
+    <td style="text-align: left">atf inv</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-13 04:47:42-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25038388</td>
+    <td style="text-align: left">Hsi human traffic</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-13 12:47:16-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Fullerton CA PD</td>
+    <td style="text-align: left">ATF 25-16607 </td>
+    <td style="text-align: left">211</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-13 15:41:23-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left">25500214</td>
+    <td style="text-align: left">TSA Airport DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-14 14:12:05-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245CSF3881739</td>
+    <td style="text-align: left">Drug Trafficker</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-14 13:10:15-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI C5</td>
+    <td style="text-align: left">Surveillance</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-14 15:20:49-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 245CSF381u39</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-14 15:22:42-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">FBI 245CSF3881739</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-14 17:47:13-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI Invest</td>
+    <td style="text-align: left">Pomona Casita case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-15 14:47:15-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">Fbi pomona case</td>
+    <td style="text-align: left">SSTF Pomona case- tax collector</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-15 15:17:14-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">Fbi pomomna</td>
+    <td style="text-align: left">SSTF Pomona case- tax collector</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-16 20:41:27-07</td>
+    <td style="text-align: right">45</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">MN25-3288</td>
+    <td style="text-align: left">HSI Narcotics</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-17 14:01:56-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">dhs suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-18 12:35:16-07</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">VIPER DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-18 13:39:31-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Michael schmidt 664/187 dhs</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-18 20:58:46-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-19 12:49:18-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Fullerton CA PD</td>
+    <td style="text-align: left">ATF</td>
+    <td style="text-align: left">Warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-20 16:17:56-07</td>
+    <td style="text-align: right">61</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Bullseye</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-20 11:38:52-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-20 11:27:39-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">Fbi 245dla3483949</td>
+    <td style="text-align: left">SSTF Pomona case- tax collector</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 14:13:21-07</td>
+    <td style="text-align: right">16</td>
+    <td style="text-align: left">Desert Hot Springs CA PD</td>
+    <td style="text-align: left">FBI C5</td>
+    <td style="text-align: left"> </td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 11:32:24-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">US MARSHALLS</td>
+    <td style="text-align: left">10-30 marshalls</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 11:36:48-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI Stalking case</td>
+    <td style="text-align: left">FBI SSTF Stalking case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 11:58:41-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">US MARSHALLS WARRANT</td>
+    <td style="text-align: left">10-30 marshalls</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 13:36:48-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Fullerton CA PD</td>
+    <td style="text-align: left">ATF DPT AST</td>
+    <td style="text-align: left">Warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-21 21:18:53-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI NK-3562986</td>
+    <td style="text-align: left">Locate Fraud Suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-22 09:33:22-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245B-SF-3903354</td>
+    <td style="text-align: left">Located Narcotics Distributor</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-22 09:57:18-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245B-SF-3903354</td>
+    <td style="text-align: left">Locate Narcotics Distributor</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-22 16:09:59-07</td>
+    <td style="text-align: right">60</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow UP HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-23 07:27:06-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">MISN div marshalls armed rob</td>
+    <td style="text-align: left">211</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-23 13:18:42-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">Fbi stalking</td>
+    <td style="text-align: left">SSTF susoect car</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-25 09:51:45-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA13WR24CA0001</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-01 13:03:09-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">San Jose CA PD</td>
+    <td style="text-align: left">25500214</td>
+    <td style="text-align: left">TSA Airport DHS</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-26 16:43:55-07</td>
+    <td style="text-align: right">25</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-26 11:30:58-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">hsi DE36BR25DE0001</td>
+    <td style="text-align: left">warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-29 12:00:55-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA02TS21CA0001</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-28 17:24:27-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">Lapd 25160795</td>
+    <td style="text-align: left">ATF task force investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-28 21:19:16-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: left">HSI Riverside Assist 8/28/25</td>
+    <td style="text-align: left">HSI Riverside Assist 8/28/25</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-29 15:55:23-07</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">281-SF-New </td>
+    <td style="text-align: left">FBI Fraud Scheme (gold coin)</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-29 15:31:21-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Placer County CA SO</td>
+    <td style="text-align: left">FBI TBD</td>
+    <td style="text-align: left">PC 187 Cold Case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-08-29 18:26:16-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 281esf4069671</td>
+    <td style="text-align: left">locate robbery fugitive</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-02 12:53:27-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI AOD TO SBSO CHU</td>
+    <td style="text-align: left">kidnapping invest</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-02 13:02:58-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">poss sus</td>
+    <td style="text-align: left">FBI kidnappin case</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-03 12:13:49-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Fresno CA PD</td>
+    <td style="text-align: left">SC-4031005 FBI </td>
+    <td style="text-align: left">Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-03 13:36:07-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">dhs code enf zetbd</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-03 16:52:38-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA13WR21CA0004</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-04 15:34:12-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA02TS21CA0001</td>
+    <td style="text-align: left">LE Follow Up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 13:15:37-07</td>
+    <td style="text-align: right">7</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Bullseye</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-09 09:55:56-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 10:04:24-07</td>
+    <td style="text-align: right">15</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">AOA HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-17 14:26:24-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA13CR25CA0004</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-09 11:47:34-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245CSF3881739</td>
+    <td style="text-align: left">Locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-09 15:09:14-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left">FBI Request Reynoso</td>
+    <td style="text-align: left">Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-09 18:02:22-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Vacaville CA PD</td>
+    <td style="text-align: left">FBI case 545B-SC-3824488</td>
+    <td style="text-align: left">Other Investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 06:57:07-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Fullerton CA PD</td>
+    <td style="text-align: left">Atf</td>
+    <td style="text-align: left">Warrant</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 13:23:21-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Pain &amp; Gain</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 11:57:07-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 245C-SF-3881739</td>
+    <td style="text-align: left">Locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-10 14:33:13-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left">FBI Buckle</td>
+    <td style="text-align: left">HT investigation</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-13 07:14:20-07</td>
+    <td style="text-align: right">32</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">fbi 281csf3881739</td>
+    <td style="text-align: left">locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-12 07:47:45-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">1030 FBI want</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-12 18:28:16-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Fullerton CA PD</td>
+    <td style="text-align: left">ATF 25-24632</td>
+    <td style="text-align: left">215</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-15 14:35:08-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-15 15:52:44-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Beverly Hills CA PD</td>
+    <td style="text-align: left">palm drive case</td>
+    <td style="text-align: left">hsi follow up</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-16 16:52:03-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Bernardino County CA SO</td>
+    <td style="text-align: left">ff04hr23ff0001</td>
+    <td style="text-align: left">for hsi az gardiner</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-17 04:32:39-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left">HSI Bullseye</td>
+    <td style="text-align: left">Sus vehicle</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-17 22:50:01-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Riverside County CA District Attorney</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Dhs attempt murder</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-18 16:06:34-07</td>
+    <td style="text-align: right">11</td>
+    <td style="text-align: left">Roseville CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">atf 25-04766</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-18 16:14:34-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Menifee CA PD</td>
+    <td style="text-align: left">FBI REQUEST</td>
+    <td style="text-align: left">Suspicious Inc/Pers/Veh</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-19 11:25:41-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Imperial City CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Hsi icac inv</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-19 11:30:56-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Hsi</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-22 14:59:02-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">Montclair CA PD</td>
+    <td style="text-align: left">FBI</td>
+    <td style="text-align: left">FBI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-22 16:15:23-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Montclair CA PD</td>
+    <td style="text-align: left">Gun sals</td>
+    <td style="text-align: left">FBI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-26 11:24:16-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 545BSC397111</td>
+    <td style="text-align: left">Locate Suspect</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-22 21:10:40-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">FBI 545bsc397111</td>
+    <td style="text-align: left">Locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-22 21:11:49-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">San Francisco CA PD</td>
+    <td style="text-align: left">Fbi 545b</td>
+    <td style="text-align: left">Locate Wanted Subject</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-23 15:36:29-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Merced County CA SO</td>
+    <td style="text-align: left">OPEN INVESTIGATION </td>
+    <td style="text-align: left">Open investigations with marshals</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-24 09:43:07-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Riverside County CA SO</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">DHS PD Felony Vehicle Hit</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-24 10:16:48-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Roseville CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">Det Loris Marshals 7qrs 002</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-24 10:30:34-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Orange County SO CA</td>
+    <td style="text-align: left">warrant</td>
+    <td style="text-align: left">us marshalls</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-24 10:44:38-07</td>
+    <td style="text-align: right">5</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">25160795</td>
+    <td style="text-align: left">ATF task force investigation firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-30 11:48:46-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">case no 25165042</td>
+    <td style="text-align: left">atf tf inv firearm trafficking</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-26 10:53:40-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">NCRIC</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">ATF 25-03686 FIREARMS TRAFFICKING VE CC</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-29 11:45:50-07</td>
+    <td style="text-align: right">6</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">USMS FID 11861521</td>
+    <td style="text-align: left">Interpol Red Notice US Marshals MS-13 Org Crimes</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-29 11:48:37-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">USMS FID 11826623</td>
+    <td style="text-align: left">Interpol Red Notice US Marshals Terror Org Crimes</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-09-30 09:12:58-07</td>
+    <td style="text-align: right">3</td>
+    <td style="text-align: left">La Habra CA PD</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-02 14:07:59-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+    <td style="text-align: left">8ykj272</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-02 14:08:30-07</td>
+    <td style="text-align: right">1</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+    <td style="text-align: left">fbi case 281la3156853</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-03 10:48:07-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Imperial County CA SO</td>
+    <td style="text-align: left">CA13CR25CA0004</td>
+    <td style="text-align: left">LE Follow up HSI</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-02 21:02:37-07</td>
+    <td style="text-align: right">4</td>
+    <td style="text-align: left">Los Angeles CA PD</td>
+    <td style="text-align: left">fbi 427832cd4</td>
+    <td style="text-align: left">NARCO SALES INV</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-06 11:25:09-07</td>
+    <td style="text-align: right">12</td>
+    <td style="text-align: left">Hermosa Beach PD CA</td>
+    <td style="text-align: left"> </td>
+    <td style="text-align: left">HSI Bullseye</td>
+  </tr>
+  <tr valign="top">
+    <td style="text-align: left">2025-10-03 14:27:54-07</td>
+    <td style="text-align: right">2</td>
+    <td style="text-align: left">Merced County CA SO</td>
+    <td style="text-align: left">AOD ATF</td>
+    <td style="text-align: left">Investigations</td>
+  </tr>
+</table>
+
+<!--___________________________________________________________-->
 <h2 class="toc" id="api_access">API access</h2>
 
 <p><span>146</span> queries have been made by the users “API User (Peregrine)” and “Peregrine API  Outbound Integration”. This is apparently some kind of integration with other information systems. <a href="https://california.public.law/codes/civil_code_section_1798.90.52">California Civil Code section 1798.90.52</a> states:</p>
@@ -495,6 +2825,13 @@ h2 { border-top: 1px solid; text-align: left; }
 <p>It is unclear whether this should be interpreted as “All accesses must be done by a person and ...”; or “If the access is made by a person, then ...” (but then it would be enough to always access the data using an alternate tool to circumvent the requirement).</p>
 
 <hr class="eod"/>
+
+<div class="history">
+  <p class="historyentry">November 25, 2025: Added the Potentially problematic queries.</p>
+
+  <p class="historyentry">October 13, 2025: first version.</p>
+</div>
+
 
 </body>
 </html>

@@ -10,13 +10,16 @@ function do_one () {
 }
 
 
+do_one danville_il_pd
+do_one denver_co_pd
 do_one lakewood_wa_pd
+do_on olympia_wa_pd
 
 do_one fairfield_ca_pd
 do_one los_altos_ca_pd
 do_one oakland_ca_pd
 do_one san_diego_ca_pd
 do_one san_francisco_ca_pd
-do_one santa_clara_county_ca_so
 do_one santa_clara_ca_pd
+do_one santa_clara_county_ca_so
 do_one vacaville_ca_pd

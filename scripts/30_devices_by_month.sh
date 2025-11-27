@@ -10,9 +10,7 @@ query_org_and_net devices_by_month "
     100 * count (devs) FILTER (WHERE 10000 <= devs                 ) / greatest (1, count (devs)) as \"% 10k+\"
 
   from (
-     select concat (extract (year from search_time),
-                    '-',
-                    right (concat ('00', extract (month from search_time)), 2)) as month,
+     select to_char (search_time, 'YYYY-MM') as month,
             devs,
             nets,
             agency

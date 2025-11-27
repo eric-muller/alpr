@@ -17,7 +17,7 @@ load_queries data-181213/rDan_Network_Audit_9.csv          net_queries "$columns
 
 columns="(name, nets, time_frame, case_number, reason, search_time)"
 
-load_queries data-181213/Muckrock_181213.xlsx org_queries "$columns"
+load_queries data-181213/Muckrock_020925.xlsx org_queries "$columns"
 
 
 psql $db <<EOF

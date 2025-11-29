@@ -68,6 +68,7 @@ execute 54_users.sh
 
 for f in 7[0-9]_*.sh ; do
     if [ -f "$f" ] ; then
+        echo ===== "$f"
         sh "$f" ;
     fi
 done

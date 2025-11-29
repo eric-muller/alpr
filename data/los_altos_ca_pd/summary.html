@@ -17,6 +17,7 @@ th, td { padding: 0 0.5em 0 0.5em; }
 
 h2 { border-top: 1px solid; text-align: left; }
 
+img { width: 100%; }
     </style>
 
     <script src='/style/style1.js'> </script>
@@ -25,7 +26,7 @@ h2 { border-top: 1px solid; text-align: left; }
 <body>
 
  <h1>Los Altos Police Department ALPR usage</h1>
- <p class="date">November 22, 2025</p>
+ <p class="date">November 29, 2025</p>
 
 <p id='toc'><span>Table of contents</span></p>
 
@@ -159,6 +160,34 @@ h2 { border-top: 1px solid; text-align: left; }
 <p>As we have seen in the previous section, the queries by other agencies vastly dominate. From the point of view of those agencies, <insert f="dataorg_short.html"/> is just one of many agencies, more or less geographically distant. When <insert f="dataorg_short.html"/>’s data is searched, there are probably many other agencies searched as well, and therefore many cameras involved, hence the high proportion of broad searches.</p>
 
 <!--___________________________________________________________-->
+<h2 class='toc' id='net_audit_nb_cameras'>Network audit: number of cameras, in detail</h2>
+
+
+<p>This graph displays one dot for each query, with the time of the query as the <i>x</i> coordinate and the number of cameras as the <i>y</i> coordinate. A few agencies get their own color. (Click on the image for a larger view)</p>
+
+<a target="_blank" href="los_altos_ca_pd_70_devs.png"><img src='los_altos_ca_pd_70_devs.png'/></a>
+
+<p>The two groups at the top correspond to the period when <insert f="dataorg_short.html"/> participated in National Lookup: many of the queries in those two groups were made by thousands of agencies outside California. That period started on 2024-12-05 and ended on 2025-03-19.</p>
+
+<p>The right group can be also be split in two: from 2025-02-13 on, all the queries came from a dozen of California agencies.</p>
+
+<p>A plausible interpretation is that <insert f="dataorg_short.html"/> turned National Lookup off around 2025-02-13. After that point, non California agencies no longer had access to <insert f="dataorg_short.html"/> data, so they no longer appear in the logs (not that they stopped making broad queries). All the queries were from Calfornia agencies that were still participating in National Lookup. Then on 2025-03-19, National Lookup was finally turned off by Flock for all California agencies.</p>
+
+<p>&#xa0;</p>
+
+<p>In the gap between the two blocks, most (but not all) queries are recorded as accessing 0 cameras. The cause is unknown.</p>
+
+<p>&#xa0;</p>
+
+<p>El Cajon is notorious for its February 11, 2025 <a href="https://www.elcajon.gov/home/showpublisheddocument/28834/638745150020330000">resolution 015-25</a> (page 87), and as of November 27, 2025 is overtly violating SB40 by <a href="../2025-11-27_El_Cajon_Transparency_Portal.pdf">sharing its ALPR data</a> with many agencies outside California.</p>
+
+<p>&#xa0;</p>
+
+<p>Note that queries with a large number of cameras are not necessarily an indication of improper sharing. Vacaville, for example, is authorized by many agencies outside of California, but does not reciprocate. The same is even more true for the Riverside County DA, which probably does not control any cameras.</p>
+
+<p>Conversely, queries with a small number of cameras are not necessarily an indication that there is no improper sharing. An agency could elect to systematically search fewer cameras than it has access to.</p>
+
+<!--___________________________________________________________-->
 <h2 class='toc' id='california_lookup'>Top agencies accessing <insert f="dataorg_short.html"/> data</h2>
 
 <p>The 25 agencies with the largest number of cases involving <insert f="dataorg_short.html"/> data since <insert f='recent.html'/>:</p>
@@ -207,6 +236,8 @@ h2 { border-top: 1px solid; text-align: left; }
 <hr class='eod'/>
 
 <div class='history'>
+  <p class='historyentry'>November 29, 2025: A closer look at the number of cameras involved in queries by outside agencies.</p>
+
   <p class='historyentry'>November 22, 2025: Treat <i>Decommissioned Org</i>, <i>Flock RTCC</i> and <i>Loma Linda Healthcare System CA Veterans Affairs PD [Federal]</i> as non-California agencies.</p>
 
   <p class='historyentry'>October 13, 2025: first version.</p>

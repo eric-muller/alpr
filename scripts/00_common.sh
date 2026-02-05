@@ -94,6 +94,7 @@ EOF
 function load_sharing()
 {
     file="$1"
+    columns="${2:-agency, shared_with_me, me_sharing}"
 
     temp_dir=../../temp
     rm -fr $temp_dir
@@ -108,7 +109,7 @@ function load_sharing()
     for f in "$temp_dir"/* ; do
         echo == $f
         tail -n +2 "$f" |\
-            psql $db -c "copy $schema.sharing from STDIN with (format csv, force_not_null (agency, shared_with_me, me_sharing));"
+            psql $db -c "copy $schema.sharing ($columns) from STDIN with (format csv, force_not_null ($columns));"
     done
 
     rm -fr "$temp_dir"
